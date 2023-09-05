@@ -1,0 +1,175 @@
+/*REGOLE DI RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header ,  main , footer , section{
+    width: 100%;
+}
+
+/* REGOLE DI DEBUG */
+.debug .container{
+    border: 1px solid black;
+}
+
+.debug .row{
+    padding: 10px;
+}
+
+.debug [class^='col-'] {
+    min-height: 20px;
+    border: 1px dashed black;
+}
+
+.debug .col-2{
+    background-color: orange;
+}
+
+.debug .col-3{
+    
+}
+
+.debug .col-4{
+    background-color: red;
+}
+
+.debug .col-5{
+    background-color: pink;
+}
+
+.debug .col-7{
+    background-color: cornflowerblue;
+    height: 300px;
+}
+
+.debug .col-8{
+    background-color: blue;
+    height: 300px;
+}
+
+.debug .col-10{
+    background-color: purple;
+    height: 300px;
+}
+
+.debug .col-12{
+    background-color: green ;
+}
+
+.sect-6 .col-12 {
+    height: 500px;
+}
+
+.sect-7 .col-4{
+    height: 300px;
+}
+
+.sect-1 .col-2 {
+    height: 30px;
+}
+.sect-1 .col-8 {
+    height: 30px;
+}
+
+.sect-1 .col-8{
+    background-color: orange;
+}
+
+/* CONTENITORI */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.container{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* COLONNE */
+
+.col-2{
+    flex-basis:calc(100% / 6) ;
+}
+
+.col-4{
+    flex-basis: calc(100% / 3);
+}
+
+.col-5{
+    flex-basis:calc(100% / 2.4) ;
+}
+
+.col-7{
+    flex-basis:calc(100% / 1.715) ;
+}
+
+.col-8{
+    flex-basis:calc(100% / 1.5) ;
+}
+
+.col-10{
+    flex-basis: calc(100% / 1.2);
+}
+
+.col-12{
+    flex-basis: calc(100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SEZIONI */
+
+.bg-water{
+    background-color: aqua;
+}
+
+.bg-blu{
+    background-color: blue;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-lightgrey{
+    background-color: lightgrey;
+}
+
+.bg-darkgrey{
+    background-color: darkslategray;
+}
+
+/* HEADER */
+header .col-8{
+    text-align: center;
+}
+
+/* FOOTER */
+footer section{
+    border: 1px solid white;
+}
+
+.container .col-12{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-footer, .buttom-footer{
+    background-color: pink;
+    border: 1px dashed black;
+}
