@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    
 }
 
 body{
@@ -15,73 +18,17 @@ header ,  main , footer , section{
     width: 100%;
 }
 
-/* REGOLE DI DEBUG */
-.debug .container{
-    border: 1px solid black;
+.row{
+    display: flex;
 }
 
-.debug .row{
-    padding: 10px;
+a{
+    text-decoration: none;
 }
 
-.debug [class^='col-'] {
-    min-height: 20px;
-    border: 1px dashed black;
-}
 
-.debug .col-2{
-    background-color: orange;
-}
 
-.debug .col-3{
-    
-}
 
-.debug .col-4{
-    background-color: red;
-}
-
-.debug .col-5{
-    background-color: pink;
-}
-
-.debug .col-7{
-    background-color: cornflowerblue;
-    height: 300px;
-}
-
-.debug .col-8{
-    background-color: blue;
-    height: 300px;
-}
-
-.debug .col-10{
-    background-color: purple;
-    height: 300px;
-}
-
-.debug .col-12{
-    background-color: green ;
-}
-
-.sect-6 .col-12 {
-    height: 500px;
-}
-
-.sect-7 .col-4{
-    height: 300px;
-}
-
-.sect-1 .col-2 {
-    height: 30px;
-}
-.sect-1 .col-8 {
-    height: 30px;
-}
-
-.sect-1 .col-8{
-    background-color: orange;
-}
 
 /* CONTENITORI */
 
@@ -90,15 +37,18 @@ header ,  main , footer , section{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    
 }
 
 .container{
-    width: 800px;
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
+
+
+
+
 
 /* COLONNE */
 
@@ -124,6 +74,8 @@ header ,  main , footer , section{
 
 .col-10{
     flex-basis: calc(100% / 1.2);
+    text-align: center;
+    
 }
 
 .col-12{
@@ -132,32 +84,55 @@ header ,  main , footer , section{
     justify-content: space-between;
 }
 
-/* SEZIONI */
 
-.bg-water{
-    background-color: aqua;
-}
-
-.bg-blu{
-    background-color: blue;
-}
-
-.bg-white{
-    background-color: white;
-}
-
-.bg-lightgrey{
-    background-color: lightgrey;
-}
-
-.bg-darkgrey{
-    background-color: darkslategray;
-}
 
 /* HEADER */
 header .col-8{
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
 }
+
+header .col-2{
+    display: flex;
+}
+
+.col-8 a{
+    color: white;
+}
+
+.login{
+    justify-content: end;
+}
+
+header{
+    color: white;
+}
+
+h1{
+    font-size: 60px;
+}
+
+
+
+/* SEZIONI */
+
+.sect-1{
+    padding-top: 20px;
+    background-color: rgb(37, 94, 233);
+    height: 60px;
+}
+
+.sect-2{
+    background-image: url(../img/jumbo.png);
+    height: 600px;
+    background-size: cover;
+    
+}
+
+
+
 
 /* FOOTER */
 footer section{
@@ -172,4 +147,13 @@ footer section{
 .logo-footer, .buttom-footer{
     background-color: pink;
     border: 1px dashed black;
+}
+
+
+/* BOTTONI */
+
+.buttom{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
 }
