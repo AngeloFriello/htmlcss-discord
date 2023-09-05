@@ -141,13 +141,13 @@ h1{
     height: 600px;
 }
 
-.sect-3 .col-3 :first-child{
+.top-text{
     font-size: 40px;
     padding-bottom: 15px;
     font-weight: 700;
 }
 
-.sect-3 .col-3 :last-child{
+.bottom-text{
     font-size: 20px;
     padding-bottom: 15px;
 }
@@ -155,17 +155,6 @@ h1{
 .sect-4 .row{
     display: flex;
     flex-direction: row-reverse;
-}
-
-.sect-4 .col-3 :first-child{
-    font-size: 40px;
-    padding-bottom: 15px;
-    font-weight: 700;
-}
-
-.sect-4 .col-3 :last-child{
-    font-size: 20px;
-    padding-bottom: 15px;
 }
 
 
