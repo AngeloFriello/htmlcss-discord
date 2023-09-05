@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Archivo Black', sans-serif;
-    
 }
 
 body{
@@ -18,7 +17,10 @@ a{
     text-decoration: none;
 }
 
-
+ul, li{
+    list-style:none;
+    padding:0;
+}
 
 
 
@@ -236,21 +238,52 @@ h1{
 
 /* FOOTER */
 
-
-footer section{
-    border: 1px solid white;
-}
-
-
-.logo-footer, .buttom-footer{
-    background-color: pink;
-    border: 1px dashed black;
+footer{
+    background-color: rgb(38, 38, 38);
+    padding: 100px 0px;
 }
 
 
 
+#flag-ita{
+    height: 15px;
+}
 
 
+#space-to-talk{
+    font-size: 40px;
+    padding-bottom: 20px        ;
+    font-weight: 700;
+    color: rgb(98, 98, 198);
+}
+
+footer li{
+    font-size: 15px;
+    color: white;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.sect-7 .row{
+    display: flex;
+    align-items: flex-start;
+}
+
+.title_list{
+    color: rgb(98, 98, 171);
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.sect-8 .col-12{
+    border-top: 1px solid rgb(87, 87, 164);
+    margin-top: 30px;
+}
+
+.sect-8 p{
+    margin-top: 30px;
+}
 
 
 /* BOTTONI */
@@ -262,9 +295,6 @@ footer section{
     background-color: white;
     color: rgb(45, 45, 45);
     font-size: 20px;
-    
-    
-
 }
 
 .buttom-black{
@@ -274,7 +304,6 @@ footer section{
     color: white;
     margin-left: 20px;
     font-size: 20px;
-   
 }
 
 .buttom-blu{
@@ -286,7 +315,13 @@ footer section{
     font-size: 20px;
 }
 
-
+.buttom-blu_footer{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgb(69, 69, 184);
+    color: white;
+    font-size: 15px;
+}
 
 
 
